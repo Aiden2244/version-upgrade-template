@@ -40,14 +40,3 @@ body:
         - label: "Run script for Apt repository updates: `cd
             tools/release_engineering/dev && ./push_release [VERSION]`"
           required: false
-  - type: markdown
-    attributes:
-      value: |
-        ## Verification
-
-        After completing the Docker/S3 step, please verify:
-
-        1. S3 contains the `drake-[VERSION]-[...].tar.gz` files for all
-           supported configurations
-        2. DockerHub has `[VERSION]` tags for all supported configurations
-        3. S3 contains the `*.deb` files for all supported configurations
