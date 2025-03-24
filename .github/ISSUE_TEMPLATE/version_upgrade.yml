@@ -3,7 +3,7 @@ description:
   Create a tracking issue for Docker image tagging, S3 upload, and Apt
   repository updates for a new Drake release.
 labels: ["type: release"]
-assignees: ["BetsyMcPhail"]
+assignees: BetsyMcPhail
 body:
   - type: markdown
     attributes:
