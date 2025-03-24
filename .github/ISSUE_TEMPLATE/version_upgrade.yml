@@ -14,6 +14,8 @@ body:
 
         For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
 
+        To see the build artifacts for the latest Drake release, visit the [GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
+
         ### Post-Release Tasks
   - type: input
     id: version
