@@ -51,9 +51,3 @@ body:
            supported configurations
         2. DockerHub has `[VERSION]` tags for all supported configurations
         3. S3 contains the `*.deb` files for all supported configurations
-  - type: textarea
-    id: notes
-    attributes:
-      label: Notes
-      description: "Document any issues encountered or special circumstances"
-      placeholder: "Add any notes about the process here"
