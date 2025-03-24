@@ -15,6 +15,8 @@ body:
 
         For detailed instructions, refer to the [Docker / Apt / S3 Release
         Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
+
+        ## Post-Release Tasks
   - type: input
     id: version
     attributes:
@@ -28,7 +30,7 @@ body:
   - type: checkboxes
     id: tasks
     attributes:
-      label: Post-Release Tasks
+      label: Tasks Checklist
       description:
         "These two steps must be completed in order. Check each box after
         completion."
