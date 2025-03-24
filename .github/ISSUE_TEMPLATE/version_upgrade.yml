@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Post-Release Actions
+        **Post-Release Actions**
 
         This issue tracks the required post-release actions that need to be completed
         after the Drake release has been published to GitHub. Please assign this issue
@@ -16,7 +16,7 @@ body:
         For detailed instructions, refer to the [Docker / Apt / S3 Release
         Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
 
-        ## Post-Release Tasks
+        **Post-Release Tasks**
   - type: input
     id: version
     attributes:
