@@ -33,10 +33,7 @@ body:
         "These two steps must be completed in order. Check each box after
         completion."
       options:
-        - label:
-            "Run script to push Docker images and mirror the artifacts to S3:
-            `bazel run //tools/release_engineering/dev:push_release -- [VERSION]`"
+        - label: "Run script to push Docker images and mirror the artifacts to S3"
           required: false
-        - label: "Run script for Apt repository updates: `cd
-            tools/release_engineering/dev && ./push_release [VERSION]`"
+        - label: "Run script for Apt repository updates"
           required: false
