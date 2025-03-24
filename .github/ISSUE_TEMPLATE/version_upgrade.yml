@@ -10,12 +10,9 @@ body:
       value: |
         ### Post-Release Actions
 
-        This issue tracks the required post-release actions that need to be completed
-        after the Drake release has been published to GitHub. Please assign this issue
-        to @BetsyMcPhail.
+        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
 
-        For detailed instructions, refer to the [Docker / Apt / S3 Release
-        Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
+        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
 
         ### Post-Release Tasks
   - type: input
