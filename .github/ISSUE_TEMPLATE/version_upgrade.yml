@@ -5,18 +5,6 @@ description:
 labels: ["type: release"]
 assignees: BetsyMcPhail
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ### Post-Release Actions
-
-        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
-
-        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
-
-        To see the build artifacts for the latest Drake release, visit the [GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
-
-        ### Post-Release Tasks
   - type: input
     id: version
     attributes:
@@ -27,27 +15,10 @@ body:
       placeholder: "1.N.0"
     validations:
       required: true
-  - type: textarea
-    id: issue_body
-    attributes:
-      label: Issue Details
-      value: |
-        ### Post-Release Actions
-
-        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
-
-        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
-
-        To see the build artifacts for the latest Drake release, visit the [Drake GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
-
-        Release Version: {{ version }}
-      render: markdown
-    validations:
-      required: true
   - type: checkboxes
     id: tasks
     attributes:
-      label: Tasks Checklist
+      label: Post-Release Tasks
       description:
         "These two steps must be completed in order. Check each box after
         completion."
@@ -56,3 +27,13 @@ body:
           required: false
         - label: "Run script for Apt repository updates"
           required: false
+  - type: textarea
+    attributes:
+      label: Post-Release Documentation
+      value: |
+
+        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
+
+        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
+
+        To see the build artifacts for the latest Drake release, visit the [Drake GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
