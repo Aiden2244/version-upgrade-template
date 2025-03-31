@@ -1,4 +1,5 @@
 name: Post-Release Actions
+title: Tracking post-release actions for Drake version <version>
 description:
   Create a tracking issue for Docker image tagging, S3 upload, and Apt
   repository updates for a new Drake release.
@@ -15,6 +16,16 @@ body:
       placeholder: "1.N.0"
     validations:
       required: true
+  - type: textarea
+    attributes:
+      label: Post-Release Documentation
+      value: |
+
+        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
+
+        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
+
+        To see the build artifacts for the latest Drake release, visit the [Drake GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
   - type: checkboxes
     id: tasks
     attributes:
@@ -27,13 +38,3 @@ body:
           required: false
         - label: "Run script for Apt repository updates"
           required: false
-  - type: textarea
-    attributes:
-      label: Post-Release Documentation
-      value: |
-
-        This issue tracks the required post-release actions that need to be completed after the Drake release has been published to GitHub.
-
-        For detailed instructions, refer to the [Docker / Apt / S3 Release Process](https://github.com/RobotLocomotion/drake/blob/master/tools/release_engineering/dev/README.md).
-
-        To see the build artifacts for the latest Drake release, visit the [Drake GitHub Releases page](https://github.com/RobotLocomotion/drake/releases/latest).
